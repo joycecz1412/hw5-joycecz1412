@@ -28,9 +28,9 @@ def remove_pairs(string):
 def bisection_root(func, x_1, x_2):
     '''docstring'''
 
-    if -0.001 < func(x_1) < 0.001:
+    if -0.0000001 < func(x_1) < 0.0000001:
         return x_1
-    if -0.001 < func(x_2) < 0.001:
+    if -0.0000001 < func(x_2) < 0.0000001:
         return x_2
     else:
         new_x = x_1 + abs(x_1-x_2) / 2
